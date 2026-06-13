@@ -36,3 +36,6 @@ def predict(data:EmailRequest):
         "email": text,
         "prediction": str(prediction)
     }
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
