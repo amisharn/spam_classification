@@ -10,7 +10,7 @@ if st.button("Predict"):
         st.warning("Please enter some text!")
     else:
         response = requests.post(
-           "https://spam-classification-2plh.onrender.com/",
+           "https://spam-classification-2plh.onrender.com/predict",
            json = {"text":email} 
         )
         result = response.json()
